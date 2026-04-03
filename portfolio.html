@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sold Properties Portfolio | Reena Sells Homes - Washington Real Estate</title>
     <meta name="description" content="View the recent real estate sales and acquisitions by Reena Harkishnani. Over $10M in transaction volume across Seattle, Bellevue, Lynnwood, and Puyallup.">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
@@ -18,15 +16,19 @@
 <body class="bg-white text-slate-900">
 
     <!-- NAVIGATION -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-4 px-8 flex justify-between items-center shadow-sm">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-4 px-6 md:px-12 flex justify-between items-center shadow-sm">
         <a href="index.html" class="flex flex-col">
-            <span class="text-xl font-bold tracking-tighter text-slate-900 leading-none uppercase italic">REENA <span class="font-light text-slate-400">Sells Homes</span></span>
-            <span class="text-[8px] tracking-[0.3em] text-emerald-600 font-bold uppercase mt-1">HomeSmart Real Estate Associates</span>
+            <span class="text-xl md:text-2xl font-bold tracking-tighter text-slate-900 leading-none uppercase italic underline decoration-emerald-500">REENA <span class="font-light text-slate-500">Sells Homes</span></span>
+            <span class="text-[8px] md:text-[10px] tracking-[0.3em] text-emerald-600 font-bold uppercase mt-1">HomeSmart Real Estate Associates</span>
         </a>
-        <div class="space-x-8 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+        <div class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
             <a href="index.html" class="hover:text-black transition">Home</a>
-            <a href="about.html" class="hover:text-black transition">About</a>
-            <a href="testimonials.html" class="hover:text-black transition">Reviews</a>
+            <a href="about.html" class="hover:text-black transition">Meet Reena</a>
+            <a href="testimonials.html" class="hover:text-black transition">Happy Clients</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="tel:2068599528" class="text-sm font-bold text-slate-900">206.859.9528</a>
+            <a href="index.html#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-sm text-[10px] font-bold hover:bg-emerald-600 transition uppercase tracking-widest shadow-xl">Contact</a>
         </div>
     </nav>
 
@@ -38,6 +40,63 @@
             <p class="text-slate-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto italic">
                 Strategic representation for buyers and sellers across the Greater Seattle Area. Over $10 Million in recent transaction volume.
             </p>
+        </div>
+    </section>
+
+    <!-- SOLD PHOTO GRID -->
+    <section class="py-16 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-center text-[10px] uppercase tracking-[0.4em] text-emerald-600 font-bold mb-10">Properties Sold Across Washington</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden">
+                    <img src="sold-by-reena-real-estate.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Sold by Reena">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="sold-by-reena-realtor.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Sold by Reena">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="sold-reena-seattlehomes.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Sold Seattle">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · SEATTLE</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="reena-sold-homes-everett.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Sold Everett">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · EVERETT</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="sold-reena-sells-homes-seattle-puyallup.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Sold Puyallup">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · PUYALLUP</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="puyallup-realtor-sells.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Puyallup Realtor">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · PUYALLUP</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="reena-bellevue-real-estate.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Bellevue Real Estate">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · BELLEVUE</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="redmond-real-estate-reena-sells-homes.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Redmond Real Estate">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · REDMOND</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="bothell-real-estate-homes-new-construction.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Bothell New Construction">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">SOLD · BOTHELL</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="new-homes-sales-reena-real-estate.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="New Home Sales">
+                    <div class="absolute bottom-0 left-0 right-0 bg-emerald-600 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">NEW CONSTRUCTION</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="seattle-flip-real-estate.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Seattle Flip">
+                    <div class="absolute bottom-0 left-0 right-0 bg-slate-900 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">FLIP · SEATTLE</div>
+                </div>
+                <div class="relative group overflow-hidden">
+                    <img src="seattle-flip-wholesale-real-estate-deals.jpg" class="h-56 w-full object-cover group-hover:scale-105 transition duration-500" alt="Wholesale Deals">
+                    <div class="absolute bottom-0 left-0 right-0 bg-slate-900 text-white text-center py-2 text-[9px] font-bold uppercase tracking-widest">WHOLESALE DEAL</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -58,12 +117,11 @@
                 <thead>
                     <tr class="bg-slate-50 border-b border-slate-200 text-slate-400">
                         <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Property Location</th>
-                        <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Price Range</th>
+                        <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Price</th>
                         <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Role</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-100">
-                    <!-- High Value -->
                     <tr class="sold-row">
                         <td class="p-6">
                             <span class="block font-bold text-slate-800">4116 166th Pl SW</span>
@@ -97,7 +155,7 @@
                         <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
                     </tr>
                     <tr class="sold-row">
-                        <td class="p-6 text-slate-500 italic">
+                        <td class="p-6">
                             <span class="block font-bold text-slate-800">Redmond, WA</span>
                             <span class="text-xs text-slate-400 uppercase tracking-widest">Confidential Address</span>
                         </td>
@@ -112,7 +170,6 @@
                         <td class="p-6 font-bold">$785,000</td>
                         <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Seller</td>
                     </tr>
-                    <!-- Middle Range -->
                     <tr class="sold-row">
                         <td class="p-6">
                             <span class="block font-bold text-slate-800">Puyallup Cluster Portfolio</span>
@@ -147,17 +204,29 @@
             <p class="text-slate-500 mb-10 max-w-xl mx-auto font-light leading-relaxed">
                 Whether listing a luxury estate or securing your first home, Reena provides the local data and negotiation leverage required for success.
             </p>
-            <a href="mailto:rharkish@gmail.com" class="bg-slate-900 text-white px-12 py-5 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-emerald-600 transition shadow-xl">
-                Discuss Your Property
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:2068599528" class="bg-emerald-600 text-white px-12 py-5 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-emerald-500 transition shadow-xl">📞 Call 206.859.9528</a>
+                <a href="mailto:rharkish@gmail.com" class="bg-slate-900 text-white px-12 py-5 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-emerald-600 transition shadow-xl">✉ Discuss Your Property</a>
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-900 text-white py-20 text-center border-t border-white/5">
-        <p class="text-[9px] uppercase tracking-[0.4em] text-slate-500 mb-4 font-bold">Licensed Washington State Broker</p>
-        <p class="text-xl font-bold italic">Reena Harkishnani | 206.859.9528</p>
-        <p class="mt-8 text-[9px] text-slate-600 uppercase tracking-widest">HomeSmart Real Estate Associates</p>
+    <footer class="bg-slate-900 text-white py-20 px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex items-center gap-6">
+                <img src="reena.jpg" class="w-20 h-20 rounded-full object-cover border-2 border-emerald-500 shadow-xl" alt="Reena Harkishnani">
+                <div>
+                    <span class="text-2xl font-bold tracking-tighter uppercase italic leading-none block">Reena <span class="text-slate-500 font-light">Sells Homes</span></span>
+                    <a href="tel:2068599528" class="text-emerald-500 font-bold text-lg">206.859.9528</a>
+                </div>
+            </div>
+            <p class="text-slate-500 text-xs uppercase tracking-widest text-center">Serving Bellevue • Redmond • Bothell • Seattle • Everett • Puyallup</p>
+            <div class="flex flex-col items-center gap-3">
+                <a href="https://www.facebook.com/reenasellshome/" target="_blank" class="hover:text-emerald-500 transition">Follow on Facebook</a>
+                <p class="text-slate-600 text-[10px] uppercase tracking-widest">© 2025 Reena Harkishnani · HomeSmart Real Estate</p>
+            </div>
+        </div>
     </footer>
 
 </body>
