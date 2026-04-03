@@ -27,4 +27,128 @@
 
     <!-- STICKY CONVERSION NAV -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 px-6 flex justify-between items-center">
-        <div class="text-xl font-bold tracking-tighte
+        <div class="text-xl font-bold tracking-tighter text-slate-900 uppercase">Reena <span class="text-slate-500 font-light italic">Sells Homes</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-xs text-slate-500 uppercase tracking-[0.2em]">
+            <a href="#listings" class="hover:text-black transition">Listings</a>
+            <a href="#contact" class="hover:text-black transition">Sell Your Home</a>
+            <a href="#report" class="hover:text-black transition">Market Insights</a>
+        </div>
+        <a href="tel:5550000000" class="bg-slate-900 text-white px-6 py-2 rounded-sm text-[10px] font-bold hover:bg-slate-700 transition uppercase tracking-widest">
+            Speak with Reena
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-gradient h-[85vh] flex items-center justify-center text-white text-center px-4">
+        <div class="max-w-4xl">
+            <span class="uppercase tracking-[0.4em] text-[10px] mb-6 block opacity-80 font-semibold">Expertise. Excellence. Reena Sells Homes.</span>
+            <h1 class="text-5xl md:text-8xl mb-8 leading-tight">Exclusive Access to Off-Market Estates</h1>
+            <p class="text-lg md:text-2xl mb-12 font-light opacity-90 max-w-2xl mx-auto">Providing discreet luxury transitions for the most discerning clients. Real estate defined by privacy.</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#listings" class="bg-white text-slate-900 px-12 py-5 font-bold rounded-sm hover:bg-slate-100 transition shadow-2xl uppercase text-xs tracking-widest">View Collections</a>
+                <a href="#contact" class="bg-transparent border border-white/50 px-12 py-5 font-bold rounded-sm hover:bg-white hover:text-slate-900 transition uppercase text-xs tracking-widest">Home Valuation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="bg-white py-10 border-b border-slate-100">
+        <div class="flex flex-wrap justify-center gap-12 opacity-40 grayscale px-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Zillow_logo.svg" class="h-5" alt="Zillow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Forbes_logo.svg" class="h-5" alt="Forbes">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Wall_Street_Journal_Logo.svg" class="h-5" alt="WSJ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/The_New_York_Times_logo.svg" class="h-5" alt="NYT">
+        </div>
+    </div>
+
+    <!-- LISTINGS GRID -->
+    <section id="listings" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl mb-4">Beyond the MLS</h2>
+            <div class="w-16 h-1 bg-slate-900 mx-auto mb-6"></div>
+            <p class="text-slate-500 max-w-xl mx-auto italic font-light text-lg">Acquire curated properties that never hit the public market.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
+                </div>
+                <h3 class="text-xl font-bold tracking-tight">The Waterfront Villa</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Private Listing - $4.5M</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
+                </div>
+                <h3 class="text-xl font-bold tracking-tight">Modern Glass Estate</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Off-Market - $8.2M</p>
+            </div>
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607687940-47a0f9259d57?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
+                </div>
+                <h3 class="text-xl font-bold tracking-tight">The Penthouse Suites</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Exclusive Collection - $2.1M+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEAD FORM (Formspree Integrated) -->
+    <section id="contact" class="max-w-4xl mx-auto my-24 p-12 bg-white shadow-2xl rounded-sm border border-slate-100">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl mb-2">Private Consultation</h2>
+            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Connect with Reena Sells Homes</p>
+        </div>
+        
+        <form action="https://formspree.io/f/mgopnwog" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col">
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Your Name</label>
+                <input type="text" name="Client Name" placeholder="Full Name" class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition" required>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Email Address</label>
+                <input type="email" name="Email Address" placeholder="email@domain.com" class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition" required>
+            </div>
+            <div class="flex flex-col md:col-span-2">
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Property Interest</label>
+                <textarea name="Inquiry Details" placeholder="Tell Reena about your property goals..." class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition h-32 resize-none"></textarea>
+            </div>
+            
+            <!-- Custom Subject line for Reena's Email -->
+            <input type="hidden" name="_subject" value="New Lead for Reena Sells Homes!">
+            
+            <button type="submit" class="bg-slate-900 text-white p-5 rounded-sm font-bold md:col-span-2 hover:bg-slate-800 transition uppercase text-xs tracking-[0.3em] mt-4 shadow-xl">
+                Submit Inquiry
+            </button>
+        </form>
+    </section>
+
+    <!-- MARKET REPORT (Formspree Integrated) -->
+    <section id="report" class="bg-slate-900 py-32 px-6 text-white text-center">
+        <div class="max-w-2xl mx-auto">
+            <span class="text-slate-500 uppercase tracking-[0.5em] text-[10px] mb-6 block font-bold">Quarterly Insights</span>
+            <h2 class="text-4xl md:text-5xl mb-8">The 2024 Global Wealth Real Estate Report</h2>
+            <p class="text-slate-400 mb-12 font-light text-lg leading-relaxed">Gain institutional-level data on luxury appreciation by Reena Sells Homes.</p>
+            
+            <form action="https://formspree.io/f/mgopnwog" method="POST" class="flex flex-col md:flex-row gap-0 shadow-3xl max-w-lg mx-auto">
+                <input type="email" name="Report Subscriber Email" placeholder="Professional Email Address" class="flex-1 p-5 text-slate-900 focus:outline-none text-sm" required>
+                <input type="hidden" name="Source" value="Market Report Subscription - Reena Sells Homes">
+                <button type="submit" class="bg-white text-slate-900 px-8 py-5 font-extrabold uppercase text-[10px] tracking-widest hover:bg-slate-200 transition">
+                    Download
+                </button>
+            </form>
+            <p class="text-[9px] mt-8 text-slate-500 uppercase tracking-[0.3em]">Confidentiality Guaranteed</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 text-center border-t border-slate-100 bg-white">
+        <div class="text-xl font-bold tracking-tighter text-slate-900 uppercase mb-6">Reena <span class="text-slate-400 font-light text-sm italic">Sells Homes</span></div>
+        <p class="text-slate-400 text-[10px] uppercase tracking-[0.3em] leading-loose">
+            &copy; 2024 Reena Sells Homes. All Rights Reserved. <br>
+            Equal Housing Opportunity | Licensed Broker
+        </p>
+    </footer>
+
+</body>
+</html>
