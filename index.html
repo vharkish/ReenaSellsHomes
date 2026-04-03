@@ -1,12 +1,14 @@
+code
+Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reena Sells Homes | Luxury Real Estate Excellence</title>
-    <meta name="description" content="Discover exclusive off-market luxury listings and expert real estate advice with Reena Sells Homes. Specializing in high-value transitions.">
+    <title>Reena Sells Homes | Seattle Luxury Real Estate</title>
+    <meta name="description" content="Discover exclusive Seattle luxury listings with Reena Sells Homes. Specialized in Seattle, Washington real estate.">
     
-    <!-- FAST LOADING CSS (TAILWIND) -->
+    <!-- FAST LOADING CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -14,39 +16,57 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2 { font-family: 'Playfair Display', serif; }
         .hero-gradient { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80'); 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1502325966718-85a90488ed29?auto=format&fit=crop&w=1920&q=80'); 
             background-size: cover; 
             background-position: center; 
         }
+        .logo-text { color: #0f172a; font-weight: 800; line-height: 0.9; }
+        .logo-seattle { color: #16a34a; font-size: 10px; letter-spacing: 0.2em; font-weight: 600; }
     </style>
-
-    <!-- GOOGLE TAG MANAGER (Paste your actual GTM ID below when you have it) -->
-    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script> -->
 </head>
 <body class="bg-slate-50">
 
     <!-- STICKY CONVERSION NAV -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 py-4 px-6 flex justify-between items-center">
-        <div class="text-xl font-bold tracking-tighter text-slate-900 uppercase">Reena <span class="text-slate-500 font-light italic">Sells Homes</span></div>
-        <div class="hidden md:flex space-x-8 font-medium text-xs text-slate-500 uppercase tracking-[0.2em]">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 py-3 px-6 flex justify-between items-center">
+        <!-- CUSTOM LOGO SVG DESIGN -->
+        <a href="#" class="flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- House Outline -->
+                <path d="M20 45L50 20L80 45V80H20V45Z" stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+                <!-- Space Needle Stylized -->
+                <path d="M50 20V80M40 30H60M43 25L50 15L57 25" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+                <path d="M35 80C35 80 40 60 50 60C60 60 65 80 65 80" stroke="#16a34a" stroke-width="3"/>
+            </svg>
+            <div>
+                <div class="logo-text text-lg uppercase tracking-tighter">REENA <span class="font-light">SELLS</span></div>
+                <div class="logo-text text-lg uppercase tracking-tighter -mt-1">HOMES</div>
+                <div class="logo-seattle uppercase">Seattle • WA</div>
+            </div>
+        </a>
+
+        <div class="hidden lg:flex space-x-8 font-medium text-[10px] text-slate-500 uppercase tracking-[0.2em]">
             <a href="#listings" class="hover:text-black transition">Listings</a>
             <a href="#contact" class="hover:text-black transition">Sell Your Home</a>
             <a href="#report" class="hover:text-black transition">Market Insights</a>
         </div>
-        <a href="tel:5550000000" class="bg-slate-900 text-white px-6 py-2 rounded-sm text-[10px] font-bold hover:bg-slate-700 transition uppercase tracking-widest">
-            Speak with Reena
-        </a>
+        
+        <div class="flex flex-col items-end">
+            <a href="tel:2068599528" class="bg-slate-900 text-white px-5 py-2 rounded-sm text-[10px] font-bold hover:bg-slate-700 transition uppercase tracking-widest">
+                Call Reena
+            </a>
+            <span class="text-[10px] text-slate-500 mt-1 font-semibold tracking-tighter">206.859.9528</span>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero-gradient h-[85vh] flex items-center justify-center text-white text-center px-4">
+    <header class="hero-gradient h-[80vh] flex items-center justify-center text-white text-center px-4">
         <div class="max-w-4xl">
-            <span class="uppercase tracking-[0.4em] text-[10px] mb-6 block opacity-80 font-semibold">Expertise. Excellence. Reena Sells Homes.</span>
-            <h1 class="text-5xl md:text-8xl mb-8 leading-tight">Exclusive Access to Off-Market Estates</h1>
-            <p class="text-lg md:text-2xl mb-12 font-light opacity-90 max-w-2xl mx-auto">Providing discreet luxury transitions for the most discerning clients. Real estate defined by privacy.</p>
+            <span class="uppercase tracking-[0.4em] text-[10px] mb-6 block opacity-80 font-semibold">Luxury Real Estate • Seattle • Washington</span>
+            <h1 class="text-5xl md:text-8xl mb-8 leading-tight">Exclusive Access to Seattle Estates</h1>
+            <p class="text-lg md:text-2xl mb-12 font-light opacity-90 max-w-2xl mx-auto">Expertise in the Seattle market. Providing discreet luxury transitions for discerning clients.</p>
             <div class="flex flex-col md:flex-row gap-6 justify-center">
                 <a href="#listings" class="bg-white text-slate-900 px-12 py-5 font-bold rounded-sm hover:bg-slate-100 transition shadow-2xl uppercase text-xs tracking-widest">View Collections</a>
-                <a href="#contact" class="bg-transparent border border-white/50 px-12 py-5 font-bold rounded-sm hover:bg-white hover:text-slate-900 transition uppercase text-xs tracking-widest">Home Valuation</a>
+                <a href="#contact" class="bg-transparent border border-white/50 px-12 py-5 font-bold rounded-sm hover:bg-white hover:text-slate-900 transition uppercase text-xs tracking-widest">What is my Home Worth?</a>
             </div>
         </div>
     </header>
@@ -64,89 +84,93 @@
     <!-- LISTINGS GRID -->
     <section id="listings" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <h2 class="text-4xl md:text-5xl mb-4">Beyond the MLS</h2>
-            <div class="w-16 h-1 bg-slate-900 mx-auto mb-6"></div>
-            <p class="text-slate-500 max-w-xl mx-auto italic font-light text-lg">Acquire curated properties that never hit the public market.</p>
+            <h2 class="text-4xl md:text-5xl mb-4">Seattle Curated Collection</h2>
+            <div class="w-16 h-1 bg-green-600 mx-auto mb-6"></div>
+            <p class="text-slate-500 max-w-xl mx-auto italic font-light text-lg">Specialized off-market listings in Greater Seattle.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="group cursor-pointer">
-                <div class="overflow-hidden mb-6 shadow-lg">
+                <div class="overflow-hidden mb-6 shadow-lg rounded-sm">
                     <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
                 </div>
-                <h3 class="text-xl font-bold tracking-tight">The Waterfront Villa</h3>
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">The Waterfront Villa</h3>
                 <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Private Listing - $4.5M</p>
             </div>
             <div class="group cursor-pointer">
-                <div class="overflow-hidden mb-6 shadow-lg">
+                <div class="overflow-hidden mb-6 shadow-lg rounded-sm">
                     <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
                 </div>
-                <h3 class="text-xl font-bold tracking-tight">Modern Glass Estate</h3>
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">Modern Glass Estate</h3>
                 <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Off-Market - $8.2M</p>
             </div>
             <div class="group cursor-pointer">
-                <div class="overflow-hidden mb-6 shadow-lg">
+                <div class="overflow-hidden mb-6 shadow-lg rounded-sm">
                     <img src="https://images.unsplash.com/photo-1600607687940-47a0f9259d57?auto=format&fit=crop&w=800&q=80" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
                 </div>
-                <h3 class="text-xl font-bold tracking-tight">The Penthouse Suites</h3>
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">The Penthouse Suites</h3>
                 <p class="text-xs text-slate-400 uppercase tracking-widest mt-2">Exclusive Collection - $2.1M+</p>
             </div>
         </div>
     </section>
 
-    <!-- LEAD FORM (Formspree Integrated) -->
+    <!-- LEAD FORM -->
     <section id="contact" class="max-w-4xl mx-auto my-24 p-12 bg-white shadow-2xl rounded-sm border border-slate-100">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl mb-2">Private Consultation</h2>
-            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Connect with Reena Sells Homes</p>
+            <h2 class="text-3xl md:text-4xl mb-2 italic">Consultation with Reena</h2>
+            <p class="text-slate-400 text-[10px] uppercase tracking-[0.4em] font-semibold">Call or Text: 206.859.9528</p>
         </div>
         
         <form action="https://formspree.io/f/mgopnwog" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex flex-col">
-                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Your Name</label>
-                <input type="text" name="Client Name" placeholder="Full Name" class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition" required>
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Full Name</label>
+                <input type="text" name="Client Name" placeholder="Reena Sells Homes Client" class="border-b border-slate-200 py-3 focus:border-green-600 outline-none transition" required>
             </div>
             <div class="flex flex-col">
-                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Email Address</label>
-                <input type="email" name="Email Address" placeholder="email@domain.com" class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition" required>
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Email</label>
+                <input type="email" name="Email Address" placeholder="email@seattle.com" class="border-b border-slate-200 py-3 focus:border-green-600 outline-none transition" required>
             </div>
             <div class="flex flex-col md:col-span-2">
-                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Property Interest</label>
-                <textarea name="Inquiry Details" placeholder="Tell Reena about your property goals..." class="border-b border-slate-200 py-3 focus:border-slate-900 outline-none transition h-32 resize-none"></textarea>
+                <label class="text-[10px] uppercase tracking-widest text-slate-400 mb-2 font-bold">Message / Property Address</label>
+                <textarea name="Inquiry Details" placeholder="How can Reena help you with your Seattle property goals?" class="border-b border-slate-200 py-3 focus:border-green-600 outline-none transition h-32 resize-none"></textarea>
             </div>
             
-            <!-- Custom Subject line for Reena's Email -->
-            <input type="hidden" name="_subject" value="New Lead for Reena Sells Homes!">
+            <input type="hidden" name="_subject" value="URGENT: Reena Sells Homes Website Lead!">
             
-            <button type="submit" class="bg-slate-900 text-white p-5 rounded-sm font-bold md:col-span-2 hover:bg-slate-800 transition uppercase text-xs tracking-[0.3em] mt-4 shadow-xl">
+            <button type="submit" class="bg-slate-900 text-white p-5 rounded-sm font-bold md:col-span-2 hover:bg-green-700 transition uppercase text-xs tracking-[0.3em] mt-4 shadow-xl">
                 Submit Inquiry
             </button>
         </form>
     </section>
 
-    <!-- MARKET REPORT (Formspree Integrated) -->
+    <!-- MARKET REPORT -->
     <section id="report" class="bg-slate-900 py-32 px-6 text-white text-center">
         <div class="max-w-2xl mx-auto">
-            <span class="text-slate-500 uppercase tracking-[0.5em] text-[10px] mb-6 block font-bold">Quarterly Insights</span>
-            <h2 class="text-4xl md:text-5xl mb-8">The 2024 Global Wealth Real Estate Report</h2>
-            <p class="text-slate-400 mb-12 font-light text-lg leading-relaxed">Gain institutional-level data on luxury appreciation by Reena Sells Homes.</p>
+            <span class="text-green-500 uppercase tracking-[0.5em] text-[10px] mb-6 block font-bold">Seattle Insights</span>
+            <h2 class="text-4xl md:text-5xl mb-8 leading-tight">The 2024 Seattle Luxury Real Estate Report</h2>
+            <p class="text-slate-400 mb-12 font-light text-lg leading-relaxed">Gain institutional-level data on Seattle property appreciation and upcoming developments.</p>
             
             <form action="https://formspree.io/f/mgopnwog" method="POST" class="flex flex-col md:flex-row gap-0 shadow-3xl max-w-lg mx-auto">
                 <input type="email" name="Report Subscriber Email" placeholder="Professional Email Address" class="flex-1 p-5 text-slate-900 focus:outline-none text-sm" required>
-                <input type="hidden" name="Source" value="Market Report Subscription - Reena Sells Homes">
+                <input type="hidden" name="Source" value="Market Report Subscription - Seattle">
                 <button type="submit" class="bg-white text-slate-900 px-8 py-5 font-extrabold uppercase text-[10px] tracking-widest hover:bg-slate-200 transition">
                     Download
                 </button>
             </form>
-            <p class="text-[9px] mt-8 text-slate-500 uppercase tracking-[0.3em]">Confidentiality Guaranteed</p>
+            <p class="text-[9px] mt-8 text-slate-500 uppercase tracking-[0.3em]">Direct Inquiries: 206.859.9528</p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="py-20 text-center border-t border-slate-100 bg-white">
-        <div class="text-xl font-bold tracking-tighter text-slate-900 uppercase mb-6">Reena <span class="text-slate-400 font-light text-sm italic">Sells Homes</span></div>
+        <div class="flex justify-center mb-6">
+             <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 45L50 20L80 45V80H20V45Z" stroke="#94a3b8" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M50 20V80M40 30H60M43 25L50 15L57 25" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
         <p class="text-slate-400 text-[10px] uppercase tracking-[0.3em] leading-loose">
-            &copy; 2024 Reena Sells Homes. All Rights Reserved. <br>
-            Equal Housing Opportunity | Licensed Broker
+            &copy; 2024 Reena Sells Homes | Seattle, Washington <br>
+            Equal Housing Opportunity | Licensed Broker | <a href="tel:2068599528" class="font-bold text-slate-600">206.859.9528</a>
         </p>
     </footer>
 
