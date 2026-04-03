@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sold Properties Portfolio | Reena Sells Homes - Washington Real Estate</title>
+    <meta name="description" content="View the recent real estate sales and acquisitions by Reena Harkishnani. Over $10M in transaction volume across Seattle, Bellevue, Lynnwood, and Puyallup.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .sold-row:hover { background-color: #f8fafc; transition: all 0.2s; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-4 px-8 flex justify-between items-center shadow-sm">
+        <a href="index.html" class="flex flex-col">
+            <span class="text-xl font-bold tracking-tighter text-slate-900 leading-none uppercase italic">REENA <span class="font-light text-slate-400">Sells Homes</span></span>
+            <span class="text-[8px] tracking-[0.3em] text-emerald-600 font-bold uppercase mt-1">HomeSmart Real Estate Associates</span>
+        </a>
+        <div class="space-x-8 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+            <a href="index.html" class="hover:text-black transition">Home</a>
+            <a href="about.html" class="hover:text-black transition">About</a>
+            <a href="testimonials.html" class="hover:text-black transition">Reviews</a>
+        </div>
+    </nav>
+
+    <!-- HERO HEADER -->
+    <section class="py-24 px-8 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-emerald-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">Confidential Sales Data</span>
+            <h1 class="text-5xl md:text-7xl font-serif italic mb-8">Proven Results.</h1>
+            <p class="text-slate-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto italic">
+                Strategic representation for buyers and sellers across the Greater Seattle Area. Over $10 Million in recent transaction volume.
+            </p>
+        </div>
+    </section>
+
+    <!-- TRANSACTION LIST -->
+    <section class="py-24 px-8 max-w-6xl mx-auto">
+        <div class="mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
+            <div>
+                <h2 class="text-4xl font-serif italic">Recent Transactions</h2>
+                <p class="text-slate-400 uppercase tracking-widest text-[10px] mt-2 font-bold">Comprehensive Market Exposure</p>
+            </div>
+            <div class="bg-emerald-50 text-emerald-700 px-6 py-3 rounded-sm text-[10px] font-bold uppercase tracking-widest border border-emerald-100">
+                18+ Properties Recently Closed
+            </div>
+        </div>
+
+        <div class="overflow-x-auto border border-slate-100 shadow-2xl">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-slate-50 border-b border-slate-200 text-slate-400">
+                        <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Property Location</th>
+                        <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Price Range</th>
+                        <th class="p-6 text-[10px] uppercase tracking-widest font-bold">Role</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                    <!-- High Value -->
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">4116 166th Pl SW</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Lynnwood, WA</span>
+                        </td>
+                        <td class="p-6 text-emerald-600 font-bold">$1,125,000</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">13617 34th Pl W</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Lynnwood, WA</span>
+                        </td>
+                        <td class="p-6 text-emerald-600 font-bold">$929,950</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">7864 198th Avenue Pl E</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Bonney Lake, WA</span>
+                        </td>
+                        <td class="p-6 text-emerald-600 font-bold">$865,000</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">14101 272nd Place NE</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Duvall, WA</span>
+                        </td>
+                        <td class="p-6 text-emerald-600 font-bold">$859,995</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6 text-slate-500 italic">
+                            <span class="block font-bold text-slate-800">Redmond, WA</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Confidential Address</span>
+                        </td>
+                        <td class="p-6 text-emerald-600 font-bold">$807,000</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyer</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">18703 10th Ave SE</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Bothell, WA</span>
+                        </td>
+                        <td class="p-6 font-bold">$785,000</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Seller</td>
+                    </tr>
+                    <!-- Middle Range -->
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">Puyallup Cluster Portfolio</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Puyallup, WA (Multiple)</span>
+                        </td>
+                        <td class="p-6 font-bold">$530k — $640k</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyers</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">Everett Acquisitions</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Everett, WA</span>
+                        </td>
+                        <td class="p-6 font-bold">$510k — $605k</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Buyers</td>
+                    </tr>
+                    <tr class="sold-row">
+                        <td class="p-6">
+                            <span class="block font-bold text-slate-800">2512 S 78th Ave</span>
+                            <span class="text-xs text-slate-400 uppercase tracking-widest">Yakima, WA</span>
+                        </td>
+                        <td class="p-6 font-bold">$350,000</td>
+                        <td class="p-6 text-[9px] font-black uppercase tracking-widest text-slate-400">Represented Seller</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CALL TO ACTION -->
+        <div class="mt-32 p-16 bg-slate-50 text-center border border-slate-100">
+            <h3 class="text-4xl font-serif italic mb-6">Expert Negotiation. <br>Seamless Transitions.</h3>
+            <p class="text-slate-500 mb-10 max-w-xl mx-auto font-light leading-relaxed">
+                Whether listing a luxury estate or securing your first home, Reena provides the local data and negotiation leverage required for success.
+            </p>
+            <a href="mailto:rharkish@gmail.com" class="bg-slate-900 text-white px-12 py-5 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-emerald-600 transition shadow-xl">
+                Discuss Your Property
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-20 text-center border-t border-white/5">
+        <p class="text-[9px] uppercase tracking-[0.4em] text-slate-500 mb-4 font-bold">Licensed Washington State Broker</p>
+        <p class="text-xl font-bold italic">Reena Harkishnani | 206.859.9528</p>
+        <p class="mt-8 text-[9px] text-slate-600 uppercase tracking-widest">HomeSmart Real Estate Associates</p>
+    </footer>
+
+</body>
+</html>
