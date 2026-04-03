@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verified Client Reviews | Reena Sells Homes - 5-Star Rated Seattle Realtor</title>
     <meta name="description" content="Read verified 5-star reviews for Reena Harkishnani. Client success stories from Lynnwood, Bellevue, and Seattle. Expert Hindi-speaking real estate services.">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .quote-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .quote-card { transition: all 0.3s ease; }
+        .quote-card:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body class="bg-white text-slate-900">
 
     <!-- NAVIGATION -->
-    <nav class="bg-white border-b border-slate-100 py-6 px-8 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-4 px-6 md:px-12 flex justify-between items-center shadow-sm">
         <a href="index.html" class="flex flex-col">
-            <span class="text-xl font-bold tracking-tighter text-slate-900 leading-none uppercase italic">REENA <span class="font-light text-slate-400">Sells Homes</span></span>
-            <span class="text-[8px] tracking-[0.3em] text-emerald-600 font-bold uppercase mt-1">HomeSmart Real Estate Associates</span>
+            <span class="text-xl md:text-2xl font-bold tracking-tighter text-slate-900 leading-none uppercase italic underline decoration-emerald-500">REENA <span class="font-light text-slate-500">Sells Homes</span></span>
+            <span class="text-[8px] md:text-[10px] tracking-[0.3em] text-emerald-600 font-bold uppercase mt-1">HomeSmart Real Estate Associates</span>
         </a>
-        <div class="space-x-8 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+        <div class="hidden lg:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
             <a href="index.html" class="hover:text-black transition">Home</a>
-            <a href="about.html" class="hover:text-black transition">About</a>
-            <a href="portfolio.html" class="hover:text-black transition">Portfolio</a>
+            <a href="about.html" class="hover:text-black transition">Meet Reena</a>
+            <a href="portfolio.html" class="hover:text-black transition">Sold Portfolio</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="tel:2068599528" class="text-sm font-bold text-slate-900">206.859.9528</a>
+            <a href="index.html#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-sm text-[10px] font-bold hover:bg-emerald-600 transition uppercase tracking-widest shadow-xl">Contact</a>
         </div>
     </nav>
 
@@ -34,7 +37,6 @@
     <section class="py-24 px-8 bg-slate-50 text-center">
         <div class="max-w-4xl mx-auto">
             <div class="flex justify-center gap-1 mb-8 text-emerald-500">
-                <!-- 5 Stars SVG -->
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -46,9 +48,30 @@
         </div>
     </section>
 
+    <!-- HAPPY CLIENT PHOTO GRID -->
+    <section class="py-16 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-center text-[10px] uppercase tracking-[0.4em] text-emerald-600 font-bold mb-10">Real Clients. Real Results.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                <img src="happy-customer-real-estate-agent.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Happy Client">
+                <img src="Client-1.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Client Success">
+                <img src="client2.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Happy Client">
+                <img src="congrats-real-estate-agent.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Congratulations">
+                <img src="seattle-customers-sell-homes.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Seattle Clients">
+                <img src="sold-by-reena-realtor.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Sold by Reena">
+                <img src="sold-by-reena-real-estate.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Sold">
+                <img src="reena-sells-homes-bodi.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Reena with Client">
+                <img src="sold-reena-seattlehomes.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Sold Seattle">
+                <img src="reena-sold-homes-everett.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Sold Everett">
+                <img src="sold-reena-sells-homes-seattle-puyallup.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Sold Puyallup">
+                <img src="everett-sold-homes-reena.jpg" class="h-40 w-full object-cover shadow hover:scale-105 transition" alt="Everett Sold">
+            </div>
+        </div>
+    </section>
+
     <!-- MAIN REVIEWS -->
     <section class="py-24 px-8 max-w-5xl mx-auto">
-        
+
         <!-- FEATURED REVIEW: SUHANI N. -->
         <div class="bg-white p-12 md:p-20 shadow-2xl border border-slate-100 rounded-sm mb-20 relative">
             <div class="absolute -top-4 left-10 bg-emerald-600 text-white px-6 py-2 text-[9px] font-bold uppercase tracking-widest">Lynnwood Single Family Home Success</div>
@@ -63,51 +86,57 @@
                 </div>
             </div>
             <div class="mt-12 text-slate-500 leading-loose font-light italic border-l-2 border-slate-100 pl-8">
-                "Reena had a great knowledge of the area and knew exactly what we were looking for. She was very responsive to our needs and was always available when we needed her. With Reena’s help, the entire process was so easy and stress free. We can’t thank her enough!"
+                "Reena had a great knowledge of the area and knew exactly what we were looking for. She was very responsive to our needs and was always available when we needed her. With Reena's help, the entire process was so easy and stress free. We can't thank her enough!"
             </div>
         </div>
 
         <!-- REVIEW GRID -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- Review 2: Loan Assistance -->
             <div class="quote-card bg-slate-50 p-10 border border-slate-100 shadow-xl">
-                <p class="text-slate-600 mb-8 italic leading-relaxed">"As first-time homebuyers, the loan process was intimidating. Reena simplified everything and advocated for us at every step. She truly bends backwards for her clients!"</p>
+                <p class="text-slate-600 mb-8 italic leading-relaxed">"As first-time homebuyers, the loan process was intimidating. Reena simplified everything and advocated for us at every step. She truly bends over backwards for her clients!"</p>
                 <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-600">— The Miller Family, Bellevue</p>
             </div>
-
-            <!-- Review 3: Flipping Expertise -->
             <div class="quote-card bg-slate-900 text-white p-10 shadow-xl">
                 <p class="text-slate-300 mb-8 italic leading-relaxed">"Reena's expertise in flipping properties is unmatched. She found us a diamond in the rough in Everett and helped us manage the listing for a record-breaking sale."</p>
                 <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">— David K., Investor</p>
             </div>
-
-            <!-- Review 4: Negotiation -->
             <div class="quote-card bg-slate-50 p-10 border border-slate-100 shadow-xl">
                 <p class="text-slate-600 mb-8 italic leading-relaxed">"Responsive, professional, and a fierce negotiator. Reena got us into an off-market property in Redmond that we never would have found on Zillow."</p>
                 <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-600">— Sarah & James, Redmond</p>
             </div>
-
-            <!-- Review 5: Cultural Needs -->
             <div class="quote-card bg-white p-10 border border-slate-100 shadow-xl">
-                <p class="text-slate-600 mb-8 italic leading-relaxed">"Finding an agent who understands Vastu and cultural preferences was key for us. Reena’s Hindi-speaking services made the communication seamless and comfortable."</p>
+                <p class="text-slate-600 mb-8 italic leading-relaxed">"Finding an agent who understands Vastu and cultural preferences was key for us. Reena's Hindi-speaking services made the communication seamless and comfortable."</p>
                 <p class="text-[10px] font-bold uppercase tracking-widest text-emerald-600">— The Sharma Family, Sammamish</p>
             </div>
         </div>
     </section>
 
     <!-- CALL TO ACTION -->
-    <section class="py-24 bg-slate-900 text-white text-center">
+    <section class="py-24 bg-slate-900 text-white text-center px-8">
         <h3 class="text-4xl font-serif italic mb-8">Be the next success story.</h3>
         <p class="text-slate-400 mb-12 max-w-md mx-auto font-light">Whether buying, selling, or investing, experience the Reena Sells Homes difference.</p>
-        <a href="mailto:rharkish@gmail.com" class="bg-emerald-600 text-white px-10 py-5 text-[10px] font-bold uppercase tracking-widest hover:bg-emerald-500 transition shadow-2xl">
-            Start Your Journey
-        </a>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:2068599528" class="bg-emerald-600 text-white px-10 py-5 text-[10px] font-bold uppercase tracking-widest hover:bg-emerald-500 transition shadow-2xl">📞 Call 206.859.9528</a>
+            <a href="mailto:rharkish@gmail.com" class="border border-white/30 text-white px-10 py-5 text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition">✉ Email Reena</a>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-20 text-center border-t border-slate-100">
-        <p class="text-[9px] uppercase tracking-[0.4em] text-slate-400 mb-4 font-bold">5.0 Star Rated Seattle Realtor</p>
-        <p class="text-slate-500 text-[10px] uppercase tracking-widest italic">HomeSmart Real Estate Associates | Reena Harkishnani</p>
+    <footer class="bg-slate-900 text-white py-20 px-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex items-center gap-6">
+                <img src="reena.jpg" class="w-20 h-20 rounded-full object-cover border-2 border-emerald-500 shadow-xl" alt="Reena Harkishnani">
+                <div>
+                    <span class="text-2xl font-bold tracking-tighter uppercase italic leading-none block">Reena <span class="text-slate-500 font-light">Sells Homes</span></span>
+                    <a href="tel:2068599528" class="text-emerald-500 font-bold text-lg">206.859.9528</a>
+                </div>
+            </div>
+            <p class="text-slate-500 text-xs uppercase tracking-widest text-center">Serving Bellevue • Redmond • Bothell • Seattle • Everett • Puyallup</p>
+            <div class="flex flex-col items-center gap-3">
+                <a href="https://www.facebook.com/reenasellshome/" target="_blank" class="hover:text-emerald-500 transition">Follow on Facebook</a>
+                <p class="text-slate-600 text-[10px] uppercase tracking-widest">© 2025 Reena Harkishnani · HomeSmart Real Estate</p>
+            </div>
+        </div>
     </footer>
 
 </body>
